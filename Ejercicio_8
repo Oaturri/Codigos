@@ -1,0 +1,16 @@
+##Hacer un ciclo donde le pida al usuario hasta tres veces la edad y cuando sea correcta ejecute la siguiente opcion digita tu numero de cedula y 
+##la siguiente si desea saber el numero de silla donde fue asignado 
+import random
+while True:
+    edad = int(input("Ingrese su edad: "))
+    if edad >= 18:
+        cedula = input("Ingrese su cedula: ")
+        silla = input("Quisiera saber su numero de silla si/no: ").strip().lower()
+
+        if silla == "si":
+           numero_silla = random.randint(1,200)
+           print ("Su numero de silla es", numero_silla)
+        terminar = input("Desea terminar la verificacion (si/no)")
+        if terminar == "si":
+            break
+           
